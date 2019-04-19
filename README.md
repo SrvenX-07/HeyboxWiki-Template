@@ -1,0 +1,1 @@
+# HeyboxWiki-Template
