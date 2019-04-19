@@ -1,0 +1,192 @@
+<!-- 主体 -->
+<div class="outer-box">
+    {% if time %}
+    <div class="item-coldown"><span>{{ time }}</span></div>
+    {% endif %}
+    <div class="inner-box">
+        <div class="item-icon float"><img src="{{ id_img }}" alt="item"></div>
+        <div class="item-name float"><span>{{ id }}</span></div>
+        <div class="item-spec float">{{ effect }}</div>
+        <div class="item-source clearfix">
+            {% if source1 %}
+            <div class="item-source-box">
+                <div class="item-source-title">来源</div>
+                <div class="item-source-icon float"><img src="{{ source1_img }}" alt="item"></div>
+                <div class="item-source-info float">
+                    <div class="item-source-name float">{{ source1 }}</div>
+                    <div class="item-source-spec float">{{ des1 }}</div>
+                </div>
+            </div>{% endif %}
+            {% if source2 %}
+            <div class="item-source-box">
+                <div class="item-source-icon float"><img src="{{ source2_img }}" alt="item"></div>
+                <div class="item-source-info float">
+                    <div class="item-source-name float">{{ source2 }}</div>
+                    <div class="item-source-spec float">{{ des2 }}</div>
+                </div>
+            </div>{% endif %}
+            {% if source3 %}
+            <div class="item-source-box">
+                <div class="item-source-icon float"><img src="{{ source3_img }}" alt="item"></div>
+                <div class="item-source-info float">
+                    <div class="item-source-name float">{{ source3 }}</div>
+                    <div class="item-source-spec float">{{ des3 }}</div>
+                </div>
+            </div>{% endif %}
+        </div>
+        <div class="item-source clearfix" style="background: none !important;padding-top: 5px !important;">
+            {% if source4 %}
+            <div class=" item-source-box float">
+                <div class="item-source-title">可合成</div>
+                <div class="item-source-icon float"><img src="{{ source4_img }}" alt="item"></div>
+                <div class="item-source-info float">
+                    <div class="item-source-name float">{{ source4 }}</div>
+                    <div class="item-source-spec float">{{ des4 }}</div>
+                </div>
+            </div>{% endif %}
+            {% if source5 %}
+            <div class="item-source-box float">
+                <div class="item-source-icon float"><img src="{{ source5_img }}" alt="item"></div>
+                <div class="item-source-info float">
+                    <div class="item-source-name float">{{ source5 }}</div>
+                    <div class="item-source-spec float">{{ des5 }}</div>
+                </div>
+            </div>{% endif %}
+            {% if source6 %}
+            <div class="item-source-box float">
+                <div class="item-source-icon float"><img src="{{ source6_img }}" alt="item"></div>
+                <div class="item-source-info float">
+                    <div class="item-source-name float">{{ source6 }}</div>
+                    <div class="item-source-spec float">{{ des6 }}</div>
+                </div>
+            </div>{% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- 样式表 -->
+<style>
+    .float {
+        float: left;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    .item-name,
+    .item-spec {
+        padding: 0 0 0 20px;
+    }
+
+    .item-name {
+        line-height: 20px;
+        color: #1f2429;
+    }
+
+    .item-spec {
+        color: #7a7a7b;
+        font-size: 12px;
+    }
+
+    .outer-box {
+        background: #f8f8f9;
+        /* border-radius: 5px; */
+    }
+
+    .outer-box,
+    .inner-box {
+        width: 100%;
+    }
+
+    .inner-box {
+        padding: 20px;
+    }
+
+    .item-icon>img {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .item-icon {
+        width: 20%;
+    }
+
+    .item-name {
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .item-spec {
+        margin: 3px 0 0 0;
+        width: 70%;
+    }
+
+    .item-source {
+        width: 100%;
+        background: url(https://cdn.max-c.com/wiki/900000061/kohc.png?v=3) no-repeat;
+        background-position: 10% 5%;
+        background-size: 10% 95%;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .item-source-title {
+        float: right;
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1f2429;
+        margin-bottom: 5px;
+    }
+
+    .item-source-link {
+        width: 5%;
+        height: inherit !important;
+        border: 1px solid white;
+    }
+
+    .item-source-icon>img {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .item-source-box {
+        float: right;
+        width: 80%;
+        padding: 5px 0 5px 20px;
+    }
+
+    .item-source-icon {
+        width: 18.75%;
+    }
+
+    .item-source-info {
+        padding-left: 20px;
+        width: 80%;
+    }
+
+    .item-source-name,
+    .item-source-spec {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .item-source-name {
+        color: #1f2429;
+    }
+
+    .item-source-spec {
+        color: #7a7a7b;
+        font-weight: 400;
+    }
+
+    .item-coldown {
+        float: right;
+        width: 10%;
+        color: white;
+        background: black;
+        border-radius: 0 5px 0 5px;
+        text-align: center;
+    }
+</style>

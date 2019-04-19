@@ -1,0 +1,99 @@
+<!-- 主体 -->
+<div class="card" style="border-left: 3px solid rgba({{ color }});">
+    <a href="heybox-entry:{{ id }}">
+        <div class="button-href"></div>
+    </a>
+    <div class="data-hero">
+        <div class="hero-img">
+            <img src="{{ logo_img }}">
+        </div>
+        <div class="hero-info">
+            <div class="hero-name">
+                {{ id }}
+            </div>
+            <div class="hero-type">
+                {{ n1 }}/{{ o1 }}
+            </div>
+        </div>
+    </div>
+    <div class="data">
+        <div>价格：{{ g1 }} </div>
+        <div>护甲：{{ c }} </div>
+    </div>
+    <div class="data">
+        <div>攻速：{{ h }} </div>
+        <div>魔抗：{{ d }} </div>
+    </div>
+    <div class="data">
+        <div>攻击距离：{{ c1 }} </div>
+        <div>生命回复：{{ e }} </div>
+    </div>
+</div>
+
+<!-- 样式表 -->
+<style>
+    .card {
+        height: 60px;
+        background: #f7f8f9;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .data-hero {
+        display: flex;
+        margin-right: 12px;
+    }
+
+    .hero-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    .hero-img>img {
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .hero-name {
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .hero-type {
+        font-size: 12px;
+        font-weight: 400;
+        color: #8c9196;
+    }
+
+    .data {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .data>div {
+        font-size: 12px;
+        font-weight: 400;
+        color: #4a4a4a;
+    }
+
+    .button-href {
+        z-index: 99;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    .hero-name a,
+    .hero-type a {
+        color: inherit !important;
+    }
+</style>

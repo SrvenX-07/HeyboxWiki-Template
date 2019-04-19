@@ -1,0 +1,48 @@
+<!-- Main -->
+<div class="foot_box">
+    <img src="{{ e1_img }}">
+    {% if n1 %}
+    <span class="label-3">{{ n1 }}</span>{% endif %}
+    {% if id %}
+    <span class="label-3">{{ id }}</span>{% endif %}
+    <p>{{ e1 }}</p>
+</div>
+<BR>
+
+<!-- Stylesheet -->
+<style>
+    .foot_box {
+        width: 100%;
+    }
+
+    .foot_box img {
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin: 0 10px 0 0;
+    }
+
+    .foot_box span {
+        padding: 1px 6px;
+        margin-top: 0px;
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    /* 野兽标签背景颜色  */
+    .foot_box .label-3 {
+        background: #a98c54;
+    }
+
+    .foot_box p {
+        margin: 10px 0 0 0;
+        font-size: 14px;
+    }
+
+    a {
+        color: inherit !important;
+        line-height: 1.5;
+        font-size: inherit !important;
+    }
+</style>

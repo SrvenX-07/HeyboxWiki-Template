@@ -1,0 +1,118 @@
+<!-- 主体 -->
+<section>
+    <div class="innerbox">
+        <div class="id-img"><img src="{{ id_img }}" alt=""></div>
+        <div class="info-box">
+            <div class="id-name">{{ id }}</div>
+
+            <div class="info-cont">
+                {% if skill %}
+                <div><span class="data-name">特性：</span><span class="data">{{ skill }}</span></div>{% endif %}
+                <div><span class="data-name">攻击力：</span><span class="data">{{ b }}</span></div>
+                <div><span class="data-name">攻速：</span><span class="data">{{ d }}</span></div>
+                <div><span class="data-name">攻击距离：</span><span class="data">{{ e }}</span></div>
+                <div><span class="data-name">血量：</span><span class="data">{{ armor }}</span></div>
+                <div><span class="data-name">护甲：</span><span class="data">{{ speed }}</span></div>
+                <div><span class="data-name">魔抗：</span><span class="data">{{ nickname }}</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 样式表 -->
+<style>
+    section {
+        width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    .id-img>img {
+        margin: 0 !important;
+    }
+
+    .innerbox {
+        clear: both;
+        padding: 10px;
+        background-color: #f7f8f9;
+    }
+
+    .innerbox>div {
+        float: left;
+    }
+
+    .id-img {
+        position: relative;
+        width: 43%;
+        padding: 4px 10% 0 19px;
+    }
+
+    .id-img img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -25px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .info-box {
+        width: 57%;
+    }
+
+    .info-cont>div {
+        line-height: 12px;
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .info-cont>span {
+        display: inline-block;
+    }
+
+    .id-name {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: #1b2838;
+    }
+
+    .id-name>span {
+        color: #8c9196 !important;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 14px;
+        font-weight: 500;
+    }
+
+    .slogan {
+        color: #8C9196;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .data-name {
+        display: inline-block;
+        color: #64696E;
+        width: 33%;
+        margin-right: 10px;
+    }
+
+    .data {
+        width: 67%;
+    }
+
+    i {
+        margin: 0 0 2px 2px;
+        display: inline-block;
+        width: 32px;
+        height: 6px;
+        background: #EAEBEC;
+    }
+
+    .add-color {
+        background: #ffdb00;
+    }
+</style>
